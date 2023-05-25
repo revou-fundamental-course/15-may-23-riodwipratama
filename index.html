@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Kalkulator Matematik (Persegi)</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <script src="script.js"></script>
+  <header>
+    <div class="wrap">
+      <!-- bagian menu		 -->
+      <nav class="menu">
+        <ul>
+            <h1 class="judul">Katik Kalkulator Matematik</h1>
+        </ul>
+      </nav>
+  </header>
+  <div class="blog">
+    <div class="wrap">
+      <div class="conteudo">
+        <h1><center>Welcome to Katik</ce  nter></h1>
+        <p class="deskripsi">Hai Sobat, Selamat datang di Katik :)<br>Sebuah Web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <button class="button">Persegi</button>
+        <button class="button">Luas Persegi</button>
+        <hr>
+        <div class="box">
+          <h3 class="sub-box"><center>Luas Persegi</center></h3>
+          <img src="https://rumushitung.com/wp-content/uploads/2021/06/Rumus-Bangun-Datar-Persegi.jpg" style="object-fit:contain;width:75px;height:113px;"/>
+          <p class="teks">Rumus Luas Persegi yaitu:</p>
+          <p class="deskripsi"><b>L =S X S</b></p>
+          <p class="teks">Dimana :<br>L = Luas<br>S = Sisi</p>
+          <hr>
+          <h3><center>Hitung Luas Persegi</center></h3>
+          <form id="resetform">
+            <input type="text" name="sisi-luas" id="sisi-luas" placeholder="Nilai Sisi" required/>
+          </form>
+          <br>
+          <div class="teks" id="one"></div>
+          <div class="teks" id="two"></div>
+          <div class="teks" id="luas"></div>
+          <div class="parent">
+            <div class="flex-parent jc-center">
+              <button type="submit" class="button-hitung" role="button" value="Hitung" onclick="hitungLuas()">Hitung</button>
+            </div>
+          </div>
+
+          <div class="parent-2">
+            <div class="flex-parent jc-center">
+              <button class="button-reset" role="button" value="Reset Luas" onclick="formReset()">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="conteudo">
+        <div class="box">
+          <h3 class="sub-box"><center>Keliling Persegi</center></h3>
+          <img src="https://rumushitung.com/wp-content/uploads/2021/06/Rumus-Bangun-Datar-Persegi.jpg" style="object-fit:contain;width:75px;height:113px;"/>
+          <p class="teks">Rumus Keliling Persegi yaitu:</p>
+          <p class="deskripsi"><b>K = 4 X S</b></p>
+          <p class="teks">Dimana :<br>K = Keliling<br>S = Sisi</p>
+          <hr>
+          <h3><center>Hitung Keliling Persegi</center></h3>
+          <form id="resetform2">
+            <input type="text" name="sisi-keliling" id="sisi-keliling" placeholder="Nilai Sisi">
+          </form>
+
+          <div class="teks" id="satu"></div>
+          <div class="teks" id="dua"></div>
+          <div class="teks" id="keliling"></div>
+
+          <div class="parent">
+            <div class="flex-parent jc-center">
+              <button class="button-hitung" role="button" value="Hitung Keliling" onclick="hitungKeliling()">Hitung</button>
+            </div>
+          </div>
+          <div class="parent-2">
+            <div class="flex-parent jc-center">
+              <button class="button-reset" role="button" value="Reset Keliling" onclick="formReset2()">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
